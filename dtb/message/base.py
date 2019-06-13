@@ -14,11 +14,12 @@ class Message(object):
 class AtableMessage(Message):
     def __init__(self, msgtype: str, atMobiles: list = None, isAtAll: bool = None):
         super(AtableMessage, self).__init__(msgtype)
-        self.at = {}
-        if atMobiles is not None:
-            self.at['atMobiles'] = atMobiles
-        if isAtAll is not None:
-            self.at['isAtAll'] = isAtAll
+        if atMobiles or isAtAll:
+            self.at = {}
+            if atMobiles is not None:
+                self.at['atMobiles'] = atMobiles
+            if isAtAll is not None:
+                self.at['isAtAll'] = isAtAll
 
 
 class TextMessage(AtableMessage):
