@@ -1,5 +1,6 @@
 import json
 from collections import OrderedDict
+from enum import Enum
 
 
 class Message(object):
