@@ -20,7 +20,7 @@ To try it, there are several steps:
 
 2. Get the `webhood`: Again go to Group Robot, in the list of Robot for this group, you should see the robot you just added. The `...` button on the right-side will lead you to the Settings page. You can update the settings for your robot. And more importantly, copy your `webhood` here.
 
-3. Setup: Back to your workspace, copy the `config_sample.py` as `config.py` and create your config with your `webhood`. `WebhookConfig` or `BaseAuthConfig`, either way would do.
+3. Setup: Back to your workspace, copy the `config_sample.py` as `config.py` and create your config with your `webhood`. `WebhookConfig`, `BaseAuthConfig`, or `EnvironConfig`, either way would do.
 
 4. Run: You are ready to set off.
 ```
