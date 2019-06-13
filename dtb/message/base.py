@@ -48,10 +48,9 @@ class TextMessage(AtableMessage):
     | isAtAll   | bool   | 否  | @所有人时：true，否则为：false       |
     '''
 
-    def __init__(self, text: str, content: str, atMobiles: list = None, isAtAll: bool = None):
+    def __init__(self, content: str, atMobiles: list = None, isAtAll: bool = None):
         super(TextMessage, self).__init__('text', atMobiles, isAtAll)
-        self.text = text
-        self.content = content
+        self.text = {'content': content}
 
 
 class LinkMessage(Message):
