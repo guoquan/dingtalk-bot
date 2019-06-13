@@ -123,16 +123,18 @@ class MarkdownMessage(AtableMessage):
                          'text': text}
 
 
+class BtnOrientation(Enum):
+    VERTICAL = '0'
+    HORIZONTAL = '1'
+
+
+class HideAvatar(Enum):
+    SHOW = '0'
+    HIDE = '1'
+
+
 class ActionCardMessage(Message):
-    class BtnOrientation(Enum):
-        VERTICAL = '0'
-        HORIZONTAL = '1'
-
-    class HideAvatar(Enum):
-        SHOW = '0'
-        HIDE = '1'
-
-    def __init__(self, title: str, text: str, btnOrientation: ActionCardMessage.BtnOrientation = None, hideAvatar: ActionCardMessage.HideAvatar = None):
+    def __init__(self, title: str, text: str, btnOrientation: BtnOrientation = None, hideAvatar: HideAvatar = None):
         super(ActionCardMessage, self).__init__('actionCard')
         self.actionCard = {'title': title,
                            'text': text}
