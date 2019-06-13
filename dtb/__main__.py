@@ -18,11 +18,10 @@ args = parser.parse_args()
 
 def main():
     config = runpy.run_path(args.config_file)[args.config]
-    url = config.url()
-
     msg = TextMessage('这是text', '这是content')
     headers = {'Content-Type': 'application/json; charset=utf-8'}
-    req = request.Request(url, msg.dump(), headers)
+
+    req = request.Request(config.url, msg.dump(), headers)
     with request.urlopen(req) as resp:
         print(resp.read().decode('utf-8'))
 
