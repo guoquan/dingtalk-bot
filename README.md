@@ -24,7 +24,7 @@ To try it, there are several steps:
 
 4. Run: You are ready to set off.
 ```
-python3 dtb
+python3 -m dtb
 ```
 ... and see? You just received a new message from the bot!
 It should read

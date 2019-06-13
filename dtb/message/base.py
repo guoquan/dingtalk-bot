@@ -132,7 +132,7 @@ class ActionCardMessage(Message):
         SHOW = '0'
         HIDE = '1'
 
-    def __init__(self, title: str, text: str, btnOrientation: BtnOrientation = None, hideAvatar: HideAvatar = None):
+    def __init__(self, title: str, text: str, btnOrientation: ActionCardMessage.BtnOrientation = None, hideAvatar: ActionCardMessage.HideAvatar = None):
         super(ActionCardMessage, self).__init__('actionCard')
         self.actionCard = {'title': title,
                            'text': text}
