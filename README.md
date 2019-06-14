@@ -1,6 +1,6 @@
 # dtb
 
-![dtb logo](logo.svg)
+[<img alt="dtb logo" src="logo.svg" onerror="this.src='logo-small.png'; this.onerror=null;">](https://github.com/guoquan/dingtalk-bot)
 
 DingTalk bot is a robot that post information to DingTalk group.
 
