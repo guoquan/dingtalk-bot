@@ -48,7 +48,7 @@ class Bot(object):
     def send(self, message):
         if len(self.history) == self.history.maxlen:
             if self.wait_for_limit:
-                wait = time.time() - self.history[-1][0] - MINUTE
+                wait = time.time() - self.history[0][0] - MINUTE
                 if wait < 0:
                     print('Wait for limit: {}s'.format(-wait))
                     time.sleep(-wait)
