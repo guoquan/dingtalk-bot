@@ -60,6 +60,8 @@ class Bot(object):
         req = request.Request(self.config.url, message.dump(), self.headers)
 
         with request.urlopen(req) as resp:
+            # TODO: process any error here
+            # TODO: consider request time or response time
             item = (time.time(), message, req, resp)
             self.history.append(item)
             # TODO: do log more properly
