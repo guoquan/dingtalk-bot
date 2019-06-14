@@ -69,12 +69,13 @@ class Bot(object):
             print(item)
             print(resp.read().decode('utf-8'))
 
-    def register(self, name):
-        def register_message(cls):
-            if not isinstance(cls, Message):
-                raise TypeError('Register Message class with Bot, while {} is provided.'.format(cls))
-            self.message_types[name] = cls
-        return cls
+    @staticmethod
+    def register(name):
+        def register_message(cls_):
+            if not isinstance(cls_, Message):
+                raise TypeError('Register Message class with Bot, while {} is provided.'.format(cls_))
+            self.message_types[name] = cls_
+        return cls_
 
     def __getattr__(self, name, *args, **kwargs):
         self.sent(message_types[name](*args, **kwargs))
