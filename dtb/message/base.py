@@ -1,10 +1,7 @@
 import json
 from collections import OrderedDict
 from enum import Enum
-from .. import bot
-
-
-Bot = bot.Bot
+from ..bot import Bot
 
 
 class Message(object):
