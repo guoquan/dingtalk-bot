@@ -10,7 +10,7 @@ class Bot(object):
     """docstring for Bot."""
     _message_types = {}
 
-    def __init__(self, config, wait_for_limit=False, limit_per_minute=19, emergency_per_minute=1):
+    def __init__(self, config, wait_for_limit=True, limit_per_minute=19, emergency_per_minute=1):
         self.config = config
         self.headers = {'Content-Type': 'application/json; charset=utf-8'}
 
