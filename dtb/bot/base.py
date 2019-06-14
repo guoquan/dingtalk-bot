@@ -75,7 +75,7 @@ class Bot(object):
             if not isinstance(cls_, Message):
                 raise TypeError('Register Message class with Bot, while {} is provided.'.format(cls_))
             self.message_types[name] = cls_
-        return cls_
+        return register_message
 
     def __getattr__(self, name, *args, **kwargs):
         self.sent(message_types[name](*args, **kwargs))
