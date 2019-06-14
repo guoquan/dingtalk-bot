@@ -7,3 +7,6 @@ class Message(object):
 
     def dump(self):
         return json.dumps(vars(self)).encode('utf-8')
+
+    def __str__(self):
+        return self.dump()
