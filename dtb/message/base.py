@@ -1,6 +1,7 @@
 import json
 from collections import OrderedDict
 from enum import Enum
+from ..bot import Bot
 
 
 class Message(object):
@@ -22,6 +23,7 @@ class AtableMessage(Message):
                 self.at['isAtAll'] = isAtAll
 
 
+@Bot.register('test')
 class TextMessage(AtableMessage):
     '''
     Sample
@@ -53,6 +55,7 @@ class TextMessage(AtableMessage):
         self.text = {'content': content}
 
 
+@Bot.register('link')
 class LinkMessage(Message):
     '''
     Sample
@@ -86,6 +89,7 @@ class LinkMessage(Message):
             self.link['picUrl'] = picUrl
 
 
+@Bot.register('markdown')
 class MarkdownMessage(AtableMessage):
     '''
     Sample
@@ -144,6 +148,7 @@ class ActionCardMessage(Message):
             self.actionCard['hideAvatar'] = hideAvatar.value
 
 
+@Bot.register('single_action')
 class SingleActionCardMessage(ActionCardMessage):
     '''
     Sample
@@ -180,7 +185,7 @@ class SingleActionCardMessage(ActionCardMessage):
             'singleTitle': singleTitle,
             'singleURL': singleURL})
 
-
+@Bot.register('multi_action')
 class MultiActionCardMessage(ActionCardMessage):
     '''
     Sample
@@ -226,6 +231,7 @@ class MultiActionCardMessage(ActionCardMessage):
                                             'actionURL': actionURL})
 
 
+@Bot.register('feed')
 class FeedCardCardMessage(Message):
     '''
     Sample
