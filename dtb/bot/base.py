@@ -1,6 +1,6 @@
 from urllib import request
 from collections import deque
-from ..message import Message
+from .. import message
 import time
 
 
@@ -71,7 +71,7 @@ class Bot(object):
     @staticmethod
     def register(name):
         def register_message(cls_):
-            if not issubclass(cls_, Message):
+            if not issubclass(cls_, message.Message):
                 raise TypeError('Register Message class with Bot, while {} is provided.'.format(cls_))
             self.message_types[name] = cls_
         return register_message
