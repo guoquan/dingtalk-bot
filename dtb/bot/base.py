@@ -1,6 +1,6 @@
 from urllib import request
 from collections import deque
-from .message import Message
+from ..message import Message
 import time
 
 
