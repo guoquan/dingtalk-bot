@@ -9,4 +9,4 @@ class Message(object):
         return json.dumps(vars(self)).encode('utf-8')
 
     def __str__(self):
-        return self.decode('utf-8')
+        return self.dump().decode('utf-8')
