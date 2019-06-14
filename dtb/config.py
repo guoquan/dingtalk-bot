@@ -1,6 +1,7 @@
 import os
 from urllib import parse
 from typing import Generic, TypeVar
+from dtb.config import instance
 
 
 class Config(object):
@@ -27,11 +28,7 @@ class BaseAuthConfig(Config):
         return self._base_url + '?' + parse.urlencode(self._auth)
 
 
-def instance(cls):
-    return cls()
-
-
-@instance
+@instance()
 class EnvironConfig(object):
     def __getitem__(self, ConfigCls):
         def create(*args, **kwargs):
