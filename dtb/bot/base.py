@@ -12,6 +12,8 @@ class Bot(object):
         self.config = config
         self.headers = {'Content-Type': 'application/json; charset=utf-8'}
 
+        self._history = []
+        self._emergency_history = []
         self.wait_for_limit = wait_for_limit
         self.limit_per_minute = limit_per_minute
         self.emergency_per_minute = emergency_per_minute
@@ -22,10 +24,7 @@ class Bot(object):
 
     @limit_per_minute.setter
     def limit_per_minute(self, limit_per_minute):
-        if hasattr(self, '_history'):
-            self._history = deque(self.history, maxlen=limit_per_minute)
-        else:
-            self._history = deque(maxlen=limit_per_minute)
+        self._history = deque(self.history, maxlen=limit_per_minute)
 
     @property
     def history(self):
@@ -37,10 +36,7 @@ class Bot(object):
 
     @limit_per_minute.setter
     def emergency_per_minute(self, emergency_per_minute):
-        if hasattr(self, '_emergency_history'):
-            self._emergency_history = deque(self.emergency_history, maxlen=emergency_per_minute)
-        else:
-            self._emergency_history = deque(maxlen=emergency_per_minute)
+        self._emergency_history = deque(self.emergency_history, maxlen=emergency_per_minute)
 
     @property
     def emergency_history(self):
@@ -75,4 +71,5 @@ class Bot(object):
         return register_message
 
     def __getattr__(self, name, *args, **kwargs):
-        self.sent(message_types[name](*args, **kwargs))
+        cls = type(self)
+        self.send(cls._message_types[name](*args, **kwargs))
