@@ -1,4 +1,4 @@
 def instance(*args, **kwargs):
     def instantiate(cls):
         return cls(*args, **kwargs)
-    return func
+    return instantiate
