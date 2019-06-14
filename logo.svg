@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="369 374 314 181" width="314" height="181">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="369" y="374">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dadada"/>
+      <stop offset="1" stop-color="#a5a5a5"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(469.3899 382.0101) rotate(45) scale(49.808806)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#76bdff"/>
+      <stop offset="1" stop-color="#5070ff"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient_2" gradientTransform="translate(401.08614 377.7844) rotate(60) scale(200.27723)"/>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient" gradientTransform="translate(547.3899 382.0101) rotate(45) scale(49.808806)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_3" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#76bdff"/>
+      <stop offset="1" stop-color="#5070ff"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient_3" gradientTransform="translate(545.9869 564.7571) rotate(-60) scale(214.3866)"/>
+    <linearGradient id="Obj_Gradient_5" xl:href="#Gradient" gradientTransform="translate(509.2399 382.0101) rotate(45) scale(49.808806)"/>
+    <linearGradient id="Obj_Gradient_6" xl:href="#Gradient" gradientTransform="translate(469.3899 382.0101) rotate(45) scale(49.808806)"/>
+    <linearGradient id="Obj_Gradient_7" xl:href="#Gradient_2" gradientTransform="translate(401.08614 377.7844) rotate(60) scale(200.27723)"/>
+    <linearGradient id="Obj_Gradient_8" xl:href="#Gradient" gradientTransform="translate(547.3899 382.0101) rotate(45) scale(49.808806)"/>
+    <linearGradient id="Obj_Gradient_9" xl:href="#Gradient_3" gradientTransform="translate(545.9869 564.7571) rotate(-60) scale(214.3866)"/>
+    <linearGradient id="Obj_Gradient_10" xl:href="#Gradient" gradientTransform="translate(509.2399 382.0101) rotate(45) scale(49.808806)"/>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.10.2 
+    <dc:date>2019-06-14 03:42:36 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill="none" stroke-dasharray="none" stroke-opacity="1" stroke="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_27_shadow" filter="url(#Shadow)">
+        <path d="M 476 398.77966 C 479.2839 401.08963 482.4147 403.71275 485.351 406.64903 C 490.5485 411.84654 494.76486 417.6537 498 423.8403 L 498 375.4 L 476 375.4 Z" fill="url(#Obj_Gradient)"/>
+      </g>
+      <g id="Graphic_91_shadow" filter="url(#Shadow)">
+        <path d="M 479.6941 412.30587 C 455.2864 387.898 415.71362 387.898 391.30588 412.30587 C 366.898 436.7136 366.898 476.2864 391.30588 500.6941 C 415.71362 525.102 455.2864 525.102 479.6941 500.6941 C 504.102 476.2864 504.102 436.7136 479.6941 412.30587 M 464.1378 427.8622 C 479.9541 443.67843 479.9541 469.32157 464.1378 485.1378 C 448.32157 500.9541 422.67843 500.9541 406.8622 485.1378 C 391.0459 469.32157 391.0459 443.67843 406.8622 427.8622 C 422.67843 412.0459 448.32157 412.0459 464.1378 427.8622 M 515.85 519.85003 C 515.9357 525.1116 517.37477 530.3552 520.1671 535.014 L 521.4938 519.85003 L 515.85 519.85 L 515.85 519.85 C 515.85 519.85 515.85 519.85 515.85 519.85 Z M 515.85 519.85 L 521.4938 519.85 L 529.3109 430.5 L 515.85 430.5 Z" fill="url(#Obj_Gradient_2)"/>
+      </g>
+      <g id="Graphic_25_shadow" filter="url(#Shadow)">
+        <path d="M 576 398.77966 L 576 375.4 L 554 375.4 L 554 423.8403 C 557.23514 417.6537 561.4515 411.84654 566.649 406.64903 C 569.5853 403.71275 572.7161 401.08963 576 398.77966 Z" fill="url(#Obj_Gradient_3)"/>
+      </g>
+      <g id="Graphic_90_shadow" filter="url(#Shadow)">
+        <path d="M 660.6941 412.30587 C 636.2864 387.898 596.7136 387.898 572.3059 412.30587 C 547.898 436.7136 547.898 476.2864 572.3059 500.6941 C 596.7136 525.102 636.2864 525.102 660.6941 500.6941 C 685.102 476.2864 685.102 436.7136 660.6941 412.30587 M 645.1378 427.8622 C 660.9541 443.67843 660.9541 469.32157 645.1378 485.1378 C 629.3216 500.9541 603.6784 500.9541 587.8622 485.1378 C 572.0459 469.32157 572.0459 443.67843 587.8622 427.8622 C 603.6784 412.0459 629.3216 412.0459 645.1378 427.8622 M 520.1671 535.014 C 521.4284 537.1183 522.96575 539.1033 524.7792 540.9168 C 536.6902 552.8278 556.0017 552.8278 567.9127 540.9168 C 573.741 535.08845 576.71744 527.48816 576.8419 519.85003 L 554.8313 519.85003 C 554.71385 521.85583 553.88886 523.82794 552.35634 525.36045 C 549.0369 528.6799 543.655 528.6799 540.33554 525.36045 C 538.803 523.82794 537.978 521.85583 537.86057 519.85003 L 521.4938 519.85003 Z M 529.3109 430.5 L 521.4938 519.85 L 537.85 519.85 L 537.85 430.5 Z" fill="url(#Obj_Gradient_4)"/>
+      </g>
+      <g id="Graphic_92_shadow" filter="url(#Shadow)">
+        <rect x="515.85" y="375.4" width="22" height="48.44029" fill="url(#Obj_Gradient_5)"/>
+      </g>
+      <g id="Graphic_27">
+        <path d="M 476 398.77966 C 479.2839 401.08963 482.4147 403.71275 485.351 406.64903 C 490.5485 411.84654 494.76486 417.6537 498 423.8403 L 498 375.4 L 476 375.4 Z" fill="url(#Obj_Gradient_6)"/>
+      </g>
+      <g id="Graphic_91">
+        <path d="M 479.6941 412.30587 C 455.2864 387.898 415.71362 387.898 391.30588 412.30587 C 366.898 436.7136 366.898 476.2864 391.30588 500.6941 C 415.71362 525.102 455.2864 525.102 479.6941 500.6941 C 504.102 476.2864 504.102 436.7136 479.6941 412.30587 M 464.1378 427.8622 C 479.9541 443.67843 479.9541 469.32157 464.1378 485.1378 C 448.32157 500.9541 422.67843 500.9541 406.8622 485.1378 C 391.0459 469.32157 391.0459 443.67843 406.8622 427.8622 C 422.67843 412.0459 448.32157 412.0459 464.1378 427.8622 M 515.85 519.85003 C 515.9357 525.1116 517.37477 530.3552 520.1671 535.014 L 521.4938 519.85003 L 515.85 519.85 L 515.85 519.85 C 515.85 519.85 515.85 519.85 515.85 519.85 Z M 515.85 519.85 L 521.4938 519.85 L 529.3109 430.5 L 515.85 430.5 Z" fill="url(#Obj_Gradient_7)"/>
+      </g>
+      <g id="Graphic_25">
+        <path d="M 576 398.77966 L 576 375.4 L 554 375.4 L 554 423.8403 C 557.23514 417.6537 561.4515 411.84654 566.649 406.64903 C 569.5853 403.71275 572.7161 401.08963 576 398.77966 Z" fill="url(#Obj_Gradient_8)"/>
+      </g>
+      <g id="Graphic_90">
+        <path d="M 660.6941 412.30587 C 636.2864 387.898 596.7136 387.898 572.3059 412.30587 C 547.898 436.7136 547.898 476.2864 572.3059 500.6941 C 596.7136 525.102 636.2864 525.102 660.6941 500.6941 C 685.102 476.2864 685.102 436.7136 660.6941 412.30587 M 645.1378 427.8622 C 660.9541 443.67843 660.9541 469.32157 645.1378 485.1378 C 629.3216 500.9541 603.6784 500.9541 587.8622 485.1378 C 572.0459 469.32157 572.0459 443.67843 587.8622 427.8622 C 603.6784 412.0459 629.3216 412.0459 645.1378 427.8622 M 520.1671 535.014 C 521.4284 537.1183 522.96575 539.1033 524.7792 540.9168 C 536.6902 552.8278 556.0017 552.8278 567.9127 540.9168 C 573.741 535.08845 576.71744 527.48816 576.8419 519.85003 L 554.8313 519.85003 C 554.71385 521.85583 553.88886 523.82794 552.35634 525.36045 C 549.0369 528.6799 543.655 528.6799 540.33554 525.36045 C 538.803 523.82794 537.978 521.85583 537.86057 519.85003 L 521.4938 519.85003 Z M 529.3109 430.5 L 521.4938 519.85 L 537.85 519.85 L 537.85 430.5 Z" fill="url(#Obj_Gradient_9)"/>
+      </g>
+      <g id="Graphic_92">
+        <rect x="515.85" y="375.4" width="22" height="48.44029" fill="url(#Obj_Gradient_10)"/>
+      </g>
+    </g>
+  </g>
+</svg>

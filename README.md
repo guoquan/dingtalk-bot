@@ -1,5 +1,7 @@
 # dtb
 
+![dtb logo](logo.svg)
+
 DingTalk bot is a robot that post information to DingTalk group.
 
 ## Official Reference
