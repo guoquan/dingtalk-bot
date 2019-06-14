@@ -1,7 +1,7 @@
 import os
 from urllib import parse
 from typing import Generic, TypeVar
-from dtb.config import instance
+from .utils import instance
 
 
 class Config(object):
