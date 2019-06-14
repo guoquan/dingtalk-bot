@@ -68,6 +68,7 @@ class Bot(object):
             if not issubclass(cls_, Message):
                 raise TypeError('Register Message class with Bot, while {} is provided.'.format(cls_))
             cls._message_types[name] = cls_
+            return cls_
 
         return register_message
 
