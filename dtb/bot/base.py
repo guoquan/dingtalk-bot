@@ -67,11 +67,11 @@ class Bot(object):
             from ..message.base import Message
             if not issubclass(cls_, Message):
                 raise TypeError('Register Message class with Bot, while {} is provided.'.format(cls_))
+            cls._message_types[name] = cls_
 
-            def send_registed(self, *args, **kwargs):
-                self.send(cls_(*args, **kwargs))
-            cls._message_types[name] = send_registed
         return register_message
 
     def __getattr__(self, name):
-        return type(self)._message_types[name]
+        def send_registed(*args, **kwargs):
+            return self.send(type(self)._message_types[name](*args, **kwargs))
+        return send_registed
