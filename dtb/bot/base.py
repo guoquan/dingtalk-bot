@@ -7,12 +7,10 @@ MINUTE = 60
 
 class Bot(object):
     """docstring for Bot."""
-
+    _message_types = {}
     def __init__(self, config, wait_for_limit=False, limit_per_minute=19, emergency_per_minute=1):
         self.config = config
         self.headers = {'Content-Type': 'application/json; charset=utf-8'}
-
-        self._message_types = {}
 
         self.wait_for_limit = wait_for_limit
         self.limit_per_minute = limit_per_minute
@@ -67,13 +65,13 @@ class Bot(object):
             print(item)
             print(resp.read().decode('utf-8'))
 
-    @staticmethod
-    def register(name):
+    @classmethod
+    def register(cls, name):
         def register_message(cls_):
             from ..message.base import Message
             if not issubclass(cls_, Message):
                 raise TypeError('Register Message class with Bot, while {} is provided.'.format(cls_))
-            self.message_types[name] = cls_
+            cls._message_types[name] = cls_
         return register_message
 
     def __getattr__(self, name, *args, **kwargs):
