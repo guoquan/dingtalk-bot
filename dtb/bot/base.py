@@ -5,9 +5,11 @@ import time
 
 MINUTE = 60
 
+
 class Bot(object):
     """docstring for Bot."""
     _message_types = {}
+
     def __init__(self, config, wait_for_limit=False, limit_per_minute=19, emergency_per_minute=1):
         self.config = config
         self.headers = {'Content-Type': 'application/json; charset=utf-8'}
@@ -36,7 +38,8 @@ class Bot(object):
 
     @limit_per_minute.setter
     def emergency_per_minute(self, emergency_per_minute):
-        self._emergency_history = deque(self.emergency_history, maxlen=emergency_per_minute)
+        self._emergency_history = deque(
+            self.emergency_history, maxlen=emergency_per_minute)
 
     @property
     def emergency_history(self):
@@ -47,11 +50,13 @@ class Bot(object):
             if self.wait_for_limit:
                 wait = time.time() - self.history[-1][0] - MINUTE
                 if wait < 0:
+                    print('Wait for limit: {}s'.format(-wait))
                     time.sleep(-wait)
             else:
                 # TODO: collect for feed
                 return
 
+        # TODO: consider in a thread
         req = request.Request(self.config.url, message.dump(), self.headers)
 
         with request.urlopen(req) as resp:
@@ -66,7 +71,8 @@ class Bot(object):
         def register_message(cls_):
             from ..message.base import Message
             if not issubclass(cls_, Message):
-                raise TypeError('Register Message class with Bot, while {} is provided.'.format(cls_))
+                raise TypeError(
+                    'Register Message class with Bot, while {} is provided.'.format(cls_))
             cls._message_types[name] = cls_
             return cls_
 
