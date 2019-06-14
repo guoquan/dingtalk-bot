@@ -70,7 +70,7 @@ class Bot(object):
     @staticmethod
     def register(name):
         def register_message(cls_):
-            from ..message import Message
+            from ..message.base import Message
             if not issubclass(cls_, Message):
                 raise TypeError('Register Message class with Bot, while {} is provided.'.format(cls_))
             self.message_types[name] = cls_

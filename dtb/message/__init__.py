@@ -1,1 +1,2 @@
-from .base import Message, AtableMessage, TextMessage, LinkMessage, MarkdownMessage, ActionCardMessage, SingleActionCardMessage, MultiActionCardMessage, FeedCardCardMessage
+from .base import Message
+from .message import AtableMessage, TextMessage, LinkMessage, MarkdownMessage, ActionCardMessage, SingleActionCardMessage, MultiActionCardMessage, FeedCardCardMessage
