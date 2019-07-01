@@ -43,3 +43,7 @@ Do not use the DingTalk SDK python for the bot, because the functionality is not
 `get_dingtal_sdk.sh` is a script to fetch the SDK.
 However, it is not used in this project.
 I provide it here just because I did spend some minutes to write it.
+
+## License
+
+[MIT License, Copyright (c) 2019 guoquan](LICENSE)
